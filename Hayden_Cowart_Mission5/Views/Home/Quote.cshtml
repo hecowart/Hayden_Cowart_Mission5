@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Get a Quote!";
+}
+<br />
+<h2>@ViewData["Title"]</h2>
+<br />
+<p>I would love to teach you about fishing! I am available to give verbal tutoring or join you for on site training as well!</p>
+<p>Use the form below to calculate a quote.</p>
+<br />
+<br />
+<h3>Calculate Here:</h3>
+<form>
+    <label>Hours:</label>
+    <input type="number" id="numHours" min="0" required />
+    <br />
+    <br />
+    <label for="chargePerHour">Hourly Rate:</label>
+    <input type="number" id="chargePerHour" value="25" readonly />
+    <br />
+    <br />
+    <input type="button" value="Calculate" id="btnSubmit" />
+    <br />
+    <br />
+    <label>Estimated Charge (in USD) :</label>
+    <input type="number" id="totalPrice" readonly />
+    <br />
+</form>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
